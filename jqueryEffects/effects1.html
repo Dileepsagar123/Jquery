@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#id01").fadeIn();
+                $("#id02").fadeIn("slow");
+                $("#id03").fadeIn(3000);
+        });
+        });
+    </script>
+</head>
+<body>
+    <button>Click to fade</button><br><br><br><br>
+    <div id="id01" style="background-color:red;display: none;width: 100px;height: 100px;"></div><br>
+    <div id="id02" style="background-color:goldenrod;display: none;width: 100px;height: 100px;"></div><br>
+    <div id="id03" style="background-color:rgb(127, 168, 255);display: none;width: 100px;height: 100px;"></div>
+</body>
+</html>

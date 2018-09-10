@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("p").click(function(){
+
+                $("p:first").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>This is first paragraph with tagname </p>
+    <p id="ido1">This is first paragraph wth id</p>
+    <p class="ido2">This is first paragraph with class</p>
+</body>
+</html>

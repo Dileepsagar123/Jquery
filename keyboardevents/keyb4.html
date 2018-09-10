@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").keydown(function(){
+                $("input").css("background-color","blue").show("slow");
+            });
+            $("input").keyup(function(){
+                $("input").css("background-color","green").show("slow");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <label for="name">Enter Text</label>
+    <input type="text" name="name" id="id01" />
+</body>
+</html>
